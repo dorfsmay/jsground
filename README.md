@@ -1,11 +1,12 @@
-# jsground
+# JS Ground
 
-## Pupose
+## Purpose
 Add an extremely simple JavaScript playground to an html file by just adding &lt;div &gt;and a link to `jsground.js`.
 
 ## Notes
 * The browser console is not captured, errors and console messages will go to the browser console.
 * Unlike the browser console, the code can be rerun even with `conts` and `let` keywords (the code is wrapped in a function before it is run).
+* The playground is just an html text area, there is not code completion nor formatting.
 
 ## Build
 Requirement: `node`
@@ -32,5 +33,6 @@ console.log(`Hello ${name}`)
 * Add an option to not use "use strict"
 * confirm the dev console cannot be opened via JavaScript
 * add warning that messages and errors go to the browser console
-* switch to a proper build (there was going to be no build, then a really small one, then the wheel was reinvented...)
-* possibly switch to a light framework
+* Add an inline editor, code completion?
+* Switch to a proper build (there was going to be no build, then a really small one, then the wheel was reinvented...)
+* Possibly switch to a light framework
