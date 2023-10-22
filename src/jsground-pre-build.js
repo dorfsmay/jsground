@@ -71,7 +71,7 @@ function populateJsGround() {
   document.head.appendChild(style);
 
   let counter = 0;
-  // Make a copy in case element with that class are added/removed.
+  // Make a copy in case elements with that class are added/removed.
   const jsGrounds = [...document.getElementsByClassName("jsground")];
   for (let ground of jsGrounds) {
     uid = counter.toString().padStart(4, "0");
