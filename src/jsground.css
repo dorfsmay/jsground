@@ -1,0 +1,24 @@
+.jsground {
+  display: flex;
+}
+
+.jsground-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.jsground-topbar {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background-color: black;
+  padding: 2px;
+}
+
+.jsground-topbar button {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.jsground-container text-area {
+  flex-basis: 0;
+}

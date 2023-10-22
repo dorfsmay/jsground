@@ -1,0 +1,24 @@
+<!doctype html>
+  <body>
+    <h1>JS Ground example</h1>
+
+    <p>An empty div:
+    <div class="jsground"></div>
+    </p>
+
+
+    <p>A div with pre-loaded code, which will be reloaded when clicking "reset".
+    Only the text is captured, I use the &lt;pre&gt; tag to keep the editor happy.
+    <div class="jsground"><pre>
+function rad2deg(n) {
+  return n * 180/Math.PI;
+}
+
+const degree = prompt("Number of degrees: ");
+alert(`${degree} degrees is ${rad2deg(degree)} radiants`);
+        </pre></div>
+    </p>
+
+    <script src="https://yves.zioup.com/jsground/jsground.js"></script>
+  </body>
+</html>
