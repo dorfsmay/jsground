@@ -1,4 +1,3 @@
-
 var jsgroundInitialValues = {};
 
 function deleteOldScript(funcId) {
@@ -29,12 +28,14 @@ async function copyToClipboard(textId) {
   }
 }
 
-function resetFunc(uid, textId){
-    document.getElementById(textId).value = jsgroundInitialValues[uid];
+function resetFunc(uid, textId) {
+  document.getElementById(textId).value = jsgroundInitialValues[uid];
 }
 
 function addJsGround(uid, ground) {
   const textId = "jsgroundText" + uid;
+  ground.classList.remove("jsground");
+  ground.classList.add("jsgrounded");
 
   ground.innerHTML = html;
   text = ground.getElementsByTagName("textarea")[0];
@@ -71,7 +72,6 @@ function populateJsGround() {
   document.head.appendChild(style);
 
   let counter = 0;
-  // Make a copy in case elements with that class are added/removed.
   const jsGrounds = [...document.getElementsByClassName("jsground")];
   for (let ground of jsGrounds) {
     uid = counter.toString().padStart(4, "0");
