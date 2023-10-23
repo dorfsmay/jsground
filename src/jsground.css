@@ -1,10 +1,12 @@
 .jsgrounded {
   display: flex;
+  font-family: monospace;
 }
 
 .jsground-container {
   display: flex;
   flex-flow: column nowrap;
+  flex-basis: 0;
 }
 
 .jsground-topbar {
@@ -18,7 +20,4 @@
 .jsground-topbar button {
   font-variant: small-caps;
   font-weight: bold;
-}
-.jsground-container text-area {
-  flex-basis: 0;
 }
