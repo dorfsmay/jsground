@@ -1,9 +1,10 @@
 # JS Ground
 
 ## Purpose
-Add an extremely simple JavaScript playground to an html file by just adding &lt;div &gt;and a link to `jsground.js`.
+Add an extremely simple JavaScript playground to an HTML5 file by just adding &lt;div &gt;and a link to `jsground.js`.
 
 ## Notes
+* Your page should not have class names starting with the string "jsground" to avoid conflict.
 * The browser console is not captured, errors and console messages will go to the browser console.
 * Unlike the browser console, the code can be rerun even with `conts` and `let` keywords (the code is wrapped in a function before it is run).
 * The playground is just an html text area, there is not code completion nor formatting.
@@ -31,6 +32,7 @@ console.log(`Hello ${name}`)
 
 ## TODO
 * Add an option to not use "use strict"
+* check for conflicting class and script names and fail.
 * confirm the dev console cannot be opened via JavaScript
 * add warning that messages and errors go to the browser console
 * Add an inline editor, code completion?
